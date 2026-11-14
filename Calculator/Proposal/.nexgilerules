@@ -1,0 +1,30 @@
+# simple-calculator — operating rules for Nexgile Code
+
+## What this project is
+simple-calculator is a monolith web app (React frontend + FastAPI backend + SQLite) that performs basic arithmetic and keeps a persistent calculation history. Deployable units: frontend, api. No auth — a single anonymous user.
+
+## What you must read before starting any task
+
+| Task | Read |
+|---|---|
+| Adding/changing a DB table | `docs/wiki/data/calculations.md` |
+| Adding/changing an API endpoint | `docs/wiki/api/00-overview.md` + the endpoint's page |
+| Adding/changing a UI route | `docs/wiki/ui/calculator.md` + the API endpoints it calls |
+| Adding a new env var | `docs/wiki/ops/env-vars.md` |
+| Adding a third-party integration | `docs/wiki/integrations/00-overview.md` |
+
+## Hard rules
+1. Never edit a wiki page without updating the `Sources` line.
+2. Never add a TODO, TBD, or FIXME without a `[GAP-XX-NN]` tracking ID.
+3. Every PR description cites the wiki section(s) it implements.
+4. If code disagrees with the wiki, update the wiki in the same PR or write `docs/sources/decisions/<date>-<slug>.md` explaining why.
+5. `docs/sources/` is append-only. `docs/log.md` is append-only.
+6. Never let a page exceed its line cap (300; 150/200 for overviews and catalogs). Split first.
+7. Never use vague verbs ("handles", "manages") in wiki content.
+8. Every cross-reference uses `path:line` or `page.md#anchor`. No prose links.
+
+## How to verify before claiming done
+Ask Nexgile Code's Spec Sync mode to bring the wiki up to date — it runs the nine wiki audits. What each audit checks: `docs/sources/external/2026-11-14-spec-bootstrap.md`.
+
+## Phase tags
+MVP. Default to `[current]`.
