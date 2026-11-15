@@ -1,6 +1,6 @@
 # Route: / — Calculator
 
-> **Sources** — interview Q12, Q15; spec `Documentation/project_documentation.md` §3, §4; [api/calculate/post.md](../api/calculate/post.md); `frontend/src/components/Calculator.jsx`, `frontend/src/components/History.jsx`
+> **Sources** — interview Q12, Q15; spec `Documentation/project_documentation.md` §3, §4; [api/calculate/post.md](../api/calculate/post.md); `frontend/src/components/Calculator.jsx:11`, `frontend/src/components/History.jsx:16`
 > **Status** — [spec]
 > **Page-size budget** — used 57 / 300 lines
 
