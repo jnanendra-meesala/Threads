@@ -8,7 +8,7 @@ def perform(first_number, operator, second_number):
     if operator == "+":
         return first_number + second_number
     if operator == "-":
-        return first_number + second_number
+        return first_number - second_number
     if operator == "*":
         return first_number * second_number
     if operator == "/":
