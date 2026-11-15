@@ -4,7 +4,7 @@ OPERATORS = ("+", "-", "*", "/")
 
 
 def perform(first_number, operator, second_number):
-    """Return the arithmetic result; supported operators are +, -, *, and /."""
+    """Return the arithmetic result; supported operators are +, -, *, and /. Raise ValueError for an unknown operator."""
     if operator == "+":
         return first_number + second_number
     if operator == "-":
