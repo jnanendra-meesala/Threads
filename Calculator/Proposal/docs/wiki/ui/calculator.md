@@ -1,6 +1,6 @@
 # Route: / — Calculator
 
-> **Sources** — interview Q12, Q15; spec `Documentation/project_documentation.md` §3, §4; [api/calculate/post.md](../api/calculate/post.md)
+> **Sources** — interview Q12, Q15; spec `Documentation/project_documentation.md` §3, §4; [api/calculate/post.md](../api/calculate/post.md); `frontend/src/components/Calculator.jsx`, `frontend/src/components/History.jsx`
 > **Status** — [spec]
 > **Page-size budget** — used 57 / 300 lines
 
@@ -11,7 +11,7 @@ Let the user perform arithmetic and manage their calculation history.
 <a id="route"></a>
 ## Route
 - Path: `/`
-- File: `frontend/src/components/Calculator.js` `[planned]`
+- File: `frontend/src/components/Calculator.jsx` `[planned]`
 - Auth required: no.
 
 <a id="state"></a>
@@ -33,8 +33,8 @@ Let the user perform arithmetic and manage their calculation history.
 
 <a id="components"></a>
 ## Components
-- `Calculator.js` — keypad + display `[planned]`
-- `History.js` — history list + delete/clear `[planned]`
+- `Calculator.jsx` — keypad + display `[planned]`
+- `History.jsx` — history list + delete/clear `[planned]`
 - `api.js` — fetch wrapper for the four endpoints `[planned]`
 
 <a id="test-plan"></a>
