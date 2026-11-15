@@ -1,0 +1,22 @@
+name: PR Fixer CI (base)
+
+on:
+  pull_request:
+    branches:
+      - qa/pr-fixer-ci-base
+
+jobs:
+  backend-unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run backend unit tests
+        working-directory: Calculator/Proposal
+        run: python -m unittest discover -s tests -t . -v
